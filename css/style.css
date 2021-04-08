@@ -34,13 +34,22 @@ body {
 
 .header {
     background: #707070;
-    border: 1px solid #707070;
-    text-align: center; 
     height: 399px;
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
 }
 
-.header p {
-    color: #FFFFFF;
+.header::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    top: 0;
+    transform: skewY(6deg);
+    top: 80%
 }
 
 .container {
@@ -72,10 +81,28 @@ body {
 
 .footer {
     background: #707070;
-    border: 1px solid #707070;
+    height: 293px;
     text-align: center; 
+    position: relative;
+    overflow: hidden;
 }
 
 .footer p {
-    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+ }
+
+.footer::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    top: 0;
+    transform: skewY(-6deg);
+    top: -73%
 }
