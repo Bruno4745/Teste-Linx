@@ -1,0 +1,30 @@
+.share-container p {
+    text-align: center;
+}
+
+.share-row {
+    justify-content: center;
+}
+
+.share-column {
+    float: left;
+    margin-bottom: 25px;
+}
+
+/* .share-column input {
+    width: 100%
+} */
+
+.share-left {
+    width: 37%;
+}
+
+.share-right {
+    width: 37%;
+}
+
+.share-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
