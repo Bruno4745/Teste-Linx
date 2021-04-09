@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: helvetica;
-    color: #888888;
+    color: #707070;
 }
 
 .textWhite {
@@ -48,8 +48,21 @@ body {
     background-color: #FFFFFF;
     left: 0;
     top: 0;
-    transform: skewY(6deg);
+    transform: skewY(5deg);
     top: 80%
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.teste {
+    margin-top: 69px;
+}
+
+.teste1 {
+    margin-top: 24px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -76,7 +89,7 @@ body {
     border-left: none;
     border-right: none;
     text-align: center;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
 
 .footer {
@@ -85,13 +98,12 @@ body {
     text-align: center; 
     position: relative;
     overflow: hidden;
+    margin-top: 71px;
 }
 
 .footer p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    position: relative;
+    top: 62%;
  }
 
 .footer::before {

@@ -7,7 +7,7 @@ async function getProducts() {
         const data = await response.json();
         console.log(data);
         
-        //Browse all products on a page
+        // Browse all products on a page
         // for(let i=0; i<data.products.length; i++){
         //     console.log(data.products[i]);
         // }

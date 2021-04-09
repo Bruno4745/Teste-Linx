@@ -1,26 +1,49 @@
+.share-container {
+    margin-top: 128px;
+}
+
 .share-container p {
     text-align: center;
 }
 
-.share-row {
-    justify-content: center;
+.share-form input{
+    margin-top: 7px;
+    margin-bottom: 50px;
+    height: 30px;
 }
 
-.share-column {
-    float: left;
-    margin-bottom: 25px;
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-button button {
+    width: 36%;
+    height: 39px;
+}
+
+.share-row {
+    display: flex;
+    margin-top: 39px;
 }
 
 .share-left {
-    width: 37%;
+    width: 50%;
+    padding-left: 10%;
+    margin-right: 20px;
+}
+
+.share-left input{
+    width: 96%;
 }
 
 .share-right {
-    width: 37%;
+    width: 50%;
+    padding-right: 10%;
+    margin-left: 20px;
 }
 
-.share-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.share-right input{
+    width: 96%;
+}

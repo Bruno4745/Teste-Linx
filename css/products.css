@@ -2,6 +2,7 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 200px;
 }
     
 /* On mouse-over, add a deeper shadow */
@@ -18,4 +19,23 @@
     width: 200px;
     height: 150px;
     border: 1px solid #707070;
+}
+
+.products-container {
+    margin-top: 79px;
+}
+
+.products-button {
+    margin-top: 52px;
+    width: 260px;
+}
+
+.card-button {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
