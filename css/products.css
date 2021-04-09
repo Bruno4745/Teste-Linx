@@ -1,39 +1,66 @@
+.products-container {
+    margin-top: 79px;
+}
+
+#show-products {    
+    margin-right: -46px;
+}
+
 /* Add shadows to create the "card" effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 200px;
     display: inline-block;
-    margin: 15px;
+    margin-right: 41px;
+    margin-bottom: 39px;
 }
-    
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
     
 /* Add some padding inside the card container */
-.card-container {
-    padding: 2px 16px;
+.card-container * {
+    margin: 0;
+    padding: 0 1vw;
 }
 
-.card image {
+.card-image {
     width: 200px;
     height: 150px;
-    border: 1px solid #707070;
+    margin-bottom: 14px;
 }
 
-.products-container {
-    margin-top: 79px;
+.textName {
+    margin-bottom: 10px;
 }
 
-.products-button {
-    margin-top: 52px;
-    width: 260px;
+.textDescription {
+    margin-bottom: 10px;
+}
+
+.textOldPrice {
+    margin-bottom: 6px;
+}
+
+.textPrice {
+    margin-bottom: 7px;
+    padding: 0;
+}
+
+.textInstallments {
+    margin-bottom: 10px;
 }
 
 .card-button {
     width: 100%;
+}
+
+.products-button {
+    margin-top: 13px;
+    width: 260px;
 }
 
 .center {
