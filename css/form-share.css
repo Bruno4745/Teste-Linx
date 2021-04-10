@@ -1,8 +1,8 @@
-.share-container {
+.form-share-container {
     margin-top: 128px;
 }
 
-.share-container p {
+.form-share-container p {
     text-align: center;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .share-left input{
-    width: 96%;
+    width: 100%;
 }
 
 .share-right {
@@ -45,5 +45,37 @@
 }
 
 .share-right input{
-    width: 96%;
+    width: 100%;
+}
+
+.right-radio div {
+    display: inline-block;
+}
+
+@media (max-width:420px) {
+    /* de 0px até 428px */
+    .form-share-container form, .form-share-container p {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 920px) {
+    /* de 0px até 768px */  
+    .share-row {
+        display: block;
+    }
+    .share-left, .share-right {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .share-form input {
+        margin-top: 7px;
+        margin-bottom: 20px;
+    }
+    .share-button button {
+        width: 260px;
+        height: 39px;
+        margin-top: 22px;
+    }
 }

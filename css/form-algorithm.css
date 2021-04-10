@@ -1,22 +1,3 @@
-.form-algorithm-content {
-    display: flex;
-    position: relative;
-}
-
-.column {
-    float: left;    
-}
-
-.left {
-    width: 65%;
-    padding-right: 4%;
-}
-
-.right {
-    width: 35%;
-    margin: auto 0;
-}
-
 .right-row input {
     width: 96%;
     height: 30px;
@@ -37,4 +18,48 @@
     width: 100%;
     height: 39px;
     margin-top: 20px;
+}
+
+@media (max-width:420px) {
+    /* de 0px até 420px */
+    .form-algorithm-content {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* de 0px até 768px */
+    .form-algorithm-content {
+        display: block;
+        margin-bottom: 90px;
+    }
+    .left {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .right-row input {
+        width: 99%;
+    }
+    .right {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:769px) {
+    /* acima de 769px */
+    .form-algorithm-content {
+        display: flex;
+        position: relative;
+    }
+    
+    .left {
+        width: 65%;
+        padding-right: 4%;
+    }
+    
+    .right {
+        width: 35%;
+        margin: auto 0;
+    }
 }
