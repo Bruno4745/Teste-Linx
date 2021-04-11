@@ -3,6 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Teste Linx - Home</title>
 
         <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -34,8 +35,7 @@
                     <p class="text12px">Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
                 </div>
                 <div class="right">
-                    <!-- Directs to index.html -->
-                    <form action="index" method="POST" class="text12px" onsubmit="sendForm()">
+                    <form action="index.html" method="POST" class="text12px" onsubmit="sendForm()" name="form-algorithm" data-netlify="true">
                         <div class="right-row">
                             <label for="nome">Seu nome:</label>
                             <br>
@@ -75,6 +75,7 @@
                 
                 <!-- Div where the products will be load -->
                 <div id="show-products"></div>
+            </div>
 
                 <div class="center">
                     <button class="button-style products-button" onclick="getProducts()">Ainda mais produtos aqui!</button>
@@ -86,8 +87,7 @@
                     <legend class="text18px"><b>Compartilhe a novidade</b></legend>
                 </fieldset>
                 <p class="text14px">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-                <!-- Directs to email.html -->
-                <form action="email" method="POST" class="text12px share-form" onsubmit="sendForm()">
+                <form action="./pages/email.html" method="POST" class="text12px share-form" onsubmit="sendForm()" name="form-share" data-netlify="true">
                     <div class="share-row">
                         <div class="share-left">
                             <label for="nome_amigo">Nome do seu amigo:</label>

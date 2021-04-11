@@ -8,8 +8,7 @@
     transition: 0.3s;
     width: 200px;
     display: inline-block;
-    margin-right: 41px;
-    margin-bottom: 39px;
+    margin: 0 20px 40px 20px;
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -39,37 +38,60 @@
 
 .textName {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .textDescription {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .textOldPrice {
     margin-bottom: 6px;
+    text-align: left;
 }
 
 .textPrice {
     margin-bottom: 7px;
     padding: 0;
+    text-align: left;
 }
 
 .textInstallments {
     margin-bottom: 10px;
+    text-align: left;
 }
 
-@media (max-width:420px) {
+.f {
+    display: flex;
+}
+
+.col {
+    flex-flow: column nowrap;
+}
+
+.row {
+    flex-flow: row nowrap;
+}
+
+.e {
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 20px;
+}
+
+@media only screen and (max-width:420px) {
     /* de 0px até 420px */
     #show-products {    
         margin-right: 0;
-        margin: 0 5%;
+        margin: 0;
     }
     .textDescription {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     /* de 0px até 768px */
     .form-algorithm-content {
         display: block;
@@ -82,7 +104,7 @@
     .card {
         display: flex;
         width: 100%;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
     }
     
     .card-image {
@@ -101,10 +123,11 @@
     }
 }
 
-@media (min-width:769px) {
+@media only screen and (min-width:769px) {
     /* acima de 768px */    
     #show-products {    
-        margin-right: -46px;
+        text-align: center;
+        margin: 0 -20px;
     }
     
     .card-image {

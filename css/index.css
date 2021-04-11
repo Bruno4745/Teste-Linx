@@ -50,8 +50,7 @@
         margin: 0;
     }
     .button-header {
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin: 0 5px 10px 5px;
     }
 }
 
@@ -59,10 +58,9 @@
     .container {
         margin: 0 10%;
     }
-    /* Colocar botoes de dois em dois */
 }
 
-@media (max-width: 830px){
+@media (min-width: 421px) and (max-width: 830px){
     .button-header {
         margin-right: 20px;
         margin-bottom: 20px;
