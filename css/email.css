@@ -1,0 +1,110 @@
+#header {
+    height: 199px;
+}
+
+.textHeader {
+    margin-top: 31px;
+    margin-bottom: 0px;
+}
+
+#header h1 {
+    margin-top: 5px;
+    margin-bottom: 9px;
+}
+
+.textHeader2 {
+    margin: 0 auto;
+    width: 360px;
+    height: 32px;
+}
+
+.textEmail * {
+    width: 563px;
+    margin: 0 auto;
+}
+
+.textEmail h1 {
+    height: 23px;
+    margin-bottom: 9px;
+}
+
+.textEmail p {
+    height: 60px;
+}
+
+#show-products {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* Add shadows to create the "card" effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    margin: 17px 20px 62px 20px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+    
+/* Add some padding inside the card container */
+.card-container * {
+    margin: 0;
+    padding: 0 1vw;
+}
+
+
+.card-button {
+    width: 200px;
+    height: 30px;
+}
+
+.card-image {
+    height: 150px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textName {
+    margin-bottom: 14px;
+}
+
+.textDescription {
+    margin-bottom: 12px;
+}
+
+.textOldPrice {
+    margin-bottom: 12px;
+}
+
+.textPrice {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.textInstallments {
+    margin-bottom: 12px;
+}
+
+.products-button {
+    width: 383px;
+    height: 39px;
+}
+
+.footer {
+    height: 158px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin-top: 79px;
+}

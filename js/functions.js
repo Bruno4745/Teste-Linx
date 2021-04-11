@@ -1,15 +1,20 @@
 let url = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
 let listProducts = "";
 
-async function getProducts() {
+async function getProducts(num) {
     try {
         // Will get data from the API and turn it into JSON
         const response = await fetch(url);
         const data = await response.json();
-        //console.log(data);
-
+        console.log(num);
+        if(num > 0){
+            teste = num;
+        } else {
+            teste = data.products.length;
+        }
+        console.log(teste);
         // Browse all products on an API page and add each product to a list (in card format)
-        for(let i=0; i<data.products.length; i++){
+        for(let i=0; i<teste; i++){
             //console.log(data.products[i]);
             listProducts += `<div class="card">  
                                 <div class="card-image center">
@@ -36,9 +41,6 @@ async function getProducts() {
         console.log("[ERROR] " + erro);
     }
 }
-
-// Calls the function to load the products from the first page of the API
-getProducts();
 
 function checkEmail(value, id) {
     //console.log(value.indexOf('.com'));

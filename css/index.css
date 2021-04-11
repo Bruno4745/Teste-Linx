@@ -1,0 +1,74 @@
+#header {
+    height: 399px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+.textHeader {
+    margin-top: 69px;
+}
+
+.textHeader2 {
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.button-header {
+    width: 160px;
+    margin-right: 40px;
+}
+
+.button-header:hover {
+    border: 1px solid #FFFFFF;
+}
+
+.container {
+    margin: 0 19.3%;
+}
+
+.fieldset {
+    border-top: 1px solid #707070;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+@media (max-width: 420px){
+    #header h1, #header p {
+        text-align: start;
+        padding: 0 5%;
+    }
+    .textHeader {
+        margin-top: 46px;
+    }
+    .container {
+        margin: 0;
+    }
+    .button-header {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px){
+    .container {
+        margin: 0 10%;
+    }
+    /* Colocar botoes de dois em dois */
+}
+
+@media (max-width: 830px){
+    .button-header {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer p {
+    top: 62%;
+}

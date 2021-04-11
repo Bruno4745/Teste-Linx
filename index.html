@@ -3,15 +3,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Teste Linx</title>
+        <title>Teste Linx - Home</title>
 
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
         <link rel="stylesheet" type="text/css" href="./css/products.css">
         <link rel="stylesheet" type="text/css" href="./css/form-algorithm.css">
         <link rel="stylesheet" type="text/css" href="./css/form-share.css">
     </head>
 
-    <body>
+    <!-- Calls the function to load the products from the first page of the API -->
+    <body onload="getProducts()">
         <header id="header">
             <p class="textWhite text20px textHeader">uma seleção de produtos</p>
             <h1 class="textWhite text40px">especial para você</h1>
@@ -32,7 +34,7 @@
                     <p class="text12px">Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
                 </div>
                 <div class="right">
-                    <form action="#" method="POST" class="text12px" onsubmit="sendForm()">
+                    <form action="index.html" method="POST" class="text12px" onsubmit="sendForm()">
                         <div class="right-row">
                             <label for="nome">Seu nome:</label>
                             <br>
@@ -83,17 +85,17 @@
                     <legend class="text18px"><b>Compartilhe a novidade</b></legend>
                 </fieldset>
                 <p class="text14px">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-                <form action="#" method="POST" class="text12px share-form" onsubmit="sendForm()">
+                <form action="email.html" method="POST" class="text12px share-form" onsubmit="sendForm()">
                     <div class="share-row">
                         <div class="share-left">
                             <label for="nome_amigo">Nome do seu amigo:</label>
                             <br>
-                            <input type="text" id="nome_amigo" placeholder="Digite o nome do seu amigo" onblur="checkName(value, id)" required />
+                            <input type="text" id="nome_amigo" name="nome_amigo" placeholder="Digite o nome do seu amigo" onblur="checkName(value, id)" required />
                         </div>
                         <div class="share-right">
                             <label for="email_amigo">E-mail:</label>
                             <br>
-                            <input type="email" id="email_amigo" placeholder="nome@email.com" onblur="checkEmail(value, id)" required />
+                            <input type="email" id="email_amigo" name="email_amigo" placeholder="nome@email.com" onblur="checkEmail(value, id)" required />
                         </div>
                     </div>
                     <div class="share-button">

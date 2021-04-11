@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste Linx - Email</title>
+        
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/email.css">
+    </head>
+
+    <!-- Calls the function to load two products from the first page of the API -->
+    <body onload="getProducts(2)">
+        <header id="header">
+            <p class="textWhite text20px textHeader">uma seleção de produtos</p>
+            <h1 class="textWhite text40px">especial para você</h1>
+            <p class="textWhite text14px textHeader2">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+        </header>
+        
+        <main>
+            <section class="textEmail">
+                <h1 class="text20px">Olá, Fulano</h1>
+                <p class="text12px">Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só:</p>
+            </section>
+
+            <section id="products-container">                
+                <!-- Div where the products will be load -->
+                <div id="show-products"></div>
+
+                <div class="center">
+                    <a href="index.html#products-container"><button class="button-style products-button">Tem muito mais aqui. Vem ver!</button></a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer textWhite text12px">
+            <p>Testando suas habilidades em HTML, CSS e JS. <br>
+            Linx Impulse <br>
+            2019</p>
+        </footer>
+
+        <script type="text/javascript" src="js/functions.js"></script>
+    </body>
+</html>

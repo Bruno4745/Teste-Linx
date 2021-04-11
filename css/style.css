@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: helvetica;
     color: #707070;
-    box-sizing: border-box;
 }
 
 .textWhite {
@@ -35,7 +34,6 @@ body {
 
 #header {
     background: #707070;
-    height: 399px;
     text-align: center; 
     position: relative;
     overflow: hidden;
@@ -53,23 +51,6 @@ body {
     transform: skewY(5deg);
     top: 80%;
     z-index: -1;
-}
-
-#header h1 {
-    margin: 0;
-}
-
-.textHeader {
-    margin-top: 69px;
-}
-
-.textHeader2 {
-    margin-top: 24px;
-    margin-bottom: 50px;
-}
-
-.container {
-    margin: 0 19.3%;
 }
 
 input:focus {
@@ -93,25 +74,6 @@ button:hover {
     color: #FFFFFF;
 }
 
-.button-header {
-    width: 160px;
-    margin-right: 40px;
-}
-
-.button-header:hover {
-    border: 1px solid #FFFFFF;
-}
-
-.fieldset {
-    border-top: 1px solid #707070;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-    margin-bottom: 25px;
-    display: flex;
-}
-
 .footer {
     background: #707070;
     height: 293px;
@@ -123,8 +85,7 @@ button:hover {
 
 .footer p {
     position: relative;
-    top: 62%;
- }
+}
 
 .footer::before {
     content: '';
@@ -136,35 +97,4 @@ button:hover {
     top: 0;
     transform: skewY(-6deg);
     top: -73%
-}
-
-@media (max-width: 420px){
-    #header h1, #header p {
-        text-align: start;
-        padding: 0 5%;
-    }
-    .textHeader {
-        margin-top: 46px;
-    }
-    .container {
-        margin: 0;
-    }
-    .button-header {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 421px) and (max-width: 768px){
-    .container {
-        margin: 0 10%;
-    }
-    /* Colocar botoes de dois em dois */
-}
-
-@media (max-width: 830px){
-    .button-header {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
 }
