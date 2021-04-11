@@ -33,7 +33,7 @@ body {
     font-size: 12px;
 }
 
-.header {
+#header {
     background: #707070;
     height: 399px;
     text-align: center; 
@@ -42,7 +42,7 @@ body {
     z-index: 1;
 }
 
-.header::before {
+#header::before {
     content: '';
     height: 100%;
     width: 100%;
@@ -55,7 +55,7 @@ body {
     z-index: -1;
 }
 
-.header h1 {
+#header h1 {
     margin: 0;
 }
 
@@ -139,7 +139,7 @@ button:hover {
 }
 
 @media (max-width: 420px){
-    .header h1, .header p {
+    #header h1, #header p {
         text-align: start;
         padding: 0 5%;
     }

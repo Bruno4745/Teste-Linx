@@ -1,8 +1,8 @@
-.form-share-container {
+#form-share-container {
     margin-top: 128px;
 }
 
-.form-share-container p {
+#form-share-container p {
     text-align: center;
 }
 
@@ -54,7 +54,7 @@
 
 @media (max-width:420px) {
     /* de 0px até 428px */
-    .form-share-container form, .form-share-container p {
+    #form-share-container form, #form-share-container p {
         margin: 0 5%;
     }
 }

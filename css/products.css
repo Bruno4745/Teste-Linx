@@ -1,3 +1,7 @@
+#products-container {
+    margin-top: 79px;
+}
+
 /* Add shadows to create the "card" effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -95,17 +99,10 @@
     .column-left {
         width: 100%;
     }
-    .products-button {
-        margin-bottom: 100px;
-    }
 }
 
 @media (min-width:769px) {
-    /* acima de 768px */
-    .products-container {
-        margin-top: 79px;
-    }
-    
+    /* acima de 768px */    
     #show-products {    
         margin-right: -46px;
     }
