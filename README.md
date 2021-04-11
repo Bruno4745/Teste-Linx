@@ -17,16 +17,17 @@ https://youthful-bassi-17af45.netlify.app/
 
 1. Baixar o arquivo .zip ou clonar o repositório
 
-sh
+```sh
 git clone https://github.com/Bruno4745/Teste-Linx.git
+```
 
-2. Tornar a pasta seu diretório corrente.
+2. Tornar a pasta seu diretório atual.
 
 3. Abrir arquivo index.html:
 
-sh
+```sh
 start index.html
-
+```
 
 ## Etapas concluídas
 - [x] Layout Desktop
